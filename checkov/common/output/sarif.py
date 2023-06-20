@@ -30,7 +30,50 @@ SEVERITY_TO_SCORE = {
     "none": "0.0",
 }
 
+TEST_ID_SEVERITY = {
+    'CKV_GCP_37': 'low', 'CKV2_GCP_3': 'low', 'CKV2_GCP_6': 'low', 'CKV_GCP_97': 'low',
+    'CKV_GCP_79': 'low', 'CKV_GCP_85': 'low', 'CKV_GCP_93': 'low', 'CKV_GCP_91': 'low',
+    'CKV_GCP_92': 'low', 'CKV_GCP_96': 'low', 'CKV_GCP_83': 'low', 'CKV_GCP_80': 'low',
+    'CKV_GCP_90': 'low', 'CKV_GCP_84': 'low', 'CKV_GCP_74': 'low', 'CKV_GCP_81': 'low',
+    'CKV_GCP_82': 'low', 'CKV_GCP_87': 'low', 'CKV_GCP_86': 'low', 'CKV_GCP_105': 'low',
+    'CKV_GCP_78': 'low', 'CKV_GCP_104': 'low', 'CKV2_GCP_7': 'low', 'CKV_GCP_13': 'low',
+    'CKV_GCP_24': 'low', 'CKV_GCP_18': 'low', 'CKV_GCP_21': 'low', 'KV_GCP_22': 'low',
+    'CKV_GCP_23': 'low', 'CKV_GCP_65': 'low', 'CKV_GCP_69': 'low', 'CKV_GCP_88': 'low',
+    'CKV_GCP_76': 'low', 'CKV_GCP_106': 'low', 'CKV_GCP_77': 'low', 'CKV_GCP_75': 'low',
+    'CKV_GCP_63': 'low', 'CKV_GCP_50': 'low', 'CKV_GCP_51': 'low', 'CKV_GCP_52': 'low',
+    'CKV_GCP_53': 'low', 'CKV_GCP_54': 'low', 'CKV_GCP_55': 'low', 'CKV_GCP_56': 'low',
+    'CKV_GCP_57': 'low', 'CKV_GCP_60': 'low', 'CKV_GCP_39': 'medium', 'CKV_GCP_43': 'medium',
+    'CKV_GCP_95': 'medium', 'CKV_GCP_30': 'medium', 'CKV_GCP_31': 'medium', 'CKV_GCP_49': 'medium',
+    'CKV_GCP_1': 'medium', 'CKV_GCP_7': 'medium', 'CKV_GCP_8': 'medium', 'CKV_GCP_9': 'medium',
+    'CKV_GCP_10': 'medium', 'CKV_GCP_25': 'medium', 'CKV_GCP_12': 'medium', 'CKV_GCP_19': 'medium',
+    'CKV_GCP_20': 'medium', 'CKV2_GCP_1': 'medium', 'CKV_GCP_68': 'medium', 'CKV_GCP_61': 'medium',
+    'CKV_GCP_64': 'medium', 'CKV_GCP_66': 'medium', 'CKV_GCP_67': 'medium', 'CKV_GCP_71': 'medium',
+    'CKV_GCP_72': 'medium', 'CKV_GCP_70': 'medium', 'CKV_GCP_26': 'medium', 'CKV2_GCP_4': 'medium',
+    'CKV2_GCP_5': 'medium', 'CKV_GCP_4': 'medium', 'CKV_GCP_16': 'medium', 'CKV_GCP_17': 'medium',
+    'CKV_GCP_27': 'medium', 'CKV_GCP_34': 'medium', 'CKV_GCP_35': 'medium', 'CKV_GCP_36': 'medium',
+    'CKV2_GCP_2': 'medium', 'CKV_GCP_73': 'medium', 'CKV2_GCP_10': 'medium', 'CKV2_GCP_11': 'medium',
+    'CKV_GCP_40': 'medium', 'CKV_GCP_102': 'medium', 'CKV_GCP_99': 'medium', 'CKV_GCP_29': 'medium',
+    'CKV_GCP_62': 'medium', 'CKV_GCP_58': 'medium', 'CKV_GCP_59': 'medium', 'CKV_GCP_6': 'high',
+    'CKV_GCP_14': 'high', 'CKV_GCP_41': 'high', 'CKV2_GCP_8': 'high', 'CKV_GCP_11': 'high',
+    'CKV_GCP_32': 'high', 'CKV_GCP_33': 'high', 'CKV_GCP_88': 'high', 'CKV2_GCP_12': 'high',
+    'CKV_GCP_28': 'high', 'CKV_GCP_100': 'high', 'CKV_GCP_94': 'high', 'CKV_GCP_89': 'high',
+    'CKV_GCP_98': 'high', 'CKV2_GCP_6': 'high', 'CKV_GCP_101': 'high', 'CKV2_GCP_9': 'high',
+    'CKV_GCP_103': 'high', 'CKV_GCP_5': 'high', 'CKV_GCP_38': 'critical', 'CKV_GCP_15': 'critical',
+    'CKV_GCP_42': 'critical', 'CKV_GCP_44': 'critical', 'CKV_GCP_45': 'critical', 'CKV_GCP_46': 'critical',
+    'CKV_GCP_47': 'critical', 'CKV_GCP_48': 'critical', 'CKV_GCP_2': 'critical', 'CKV_GCP_3': 'critical'
+}
 
+TESTID_UNDOC_SEVERITY = {
+    'CKV_GCP_107': 'low', 'CKV_GCP_108': 'low', 'CKV_GCP_109': 'low', 'CKV_GCP_110': 'low',
+    'CKV_GCP_111': 'low', 'CKV_GCP_112': 'low', 'CKV_GCP_113': 'low', 'CKV_GCP_114': 'low',
+    'CKV_GCP_115': 'low', 'CKV_GCP_117': 'low', 'CKV2_GCP_13': 'low', 'CKV2_GCP_14': 'low',
+    'CKV2_GCP_15': 'low', 'CKV2_GCP_16': 'low', 'CKV2_GCP_17': 'low', 'CKV2_GCP_18': 'low',
+    'CKV2_GCP_19': 'low', 'CKV2_GCP_20': 'low'
+}
+
+TEST_ID_SEVERITY.update(TESTID_UNDOC_SEVERITY)
+
+ 
 class Sarif:
     def __init__(self, reports: list[Report], tool: str | None) -> None:
         self.reports = reports
@@ -203,7 +246,10 @@ class Sarif:
                 if record.severity:
                     level = SEVERITY_TO_SARIF_LEVEL.get(record.severity.name.lower(), "none")
                 elif record.check_result.get("result") == CheckResult.FAILED:
-                    level = "error"
+                    if record.check_id in TEST_ID_SEVERITY:
+                        level = SEVERITY_TO_SARIF_LEVEL.get(TEST_ID_SEVERITY[record.check_id], "none")
+                    else:
+                        level = "error"
 
                 rule_id = self._create_rule_id(check_type=report.check_type, record=record)
                 if not rule_id or rule_id not in self.rule_index_map:
